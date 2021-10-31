@@ -13,7 +13,14 @@ Assuming your project is called `joseki` and you want to deploy the project as
 gcloud builds submit --tag gcr.io/joseki/simple_joseki_server
 ```
 
-After it finishes, you can deploy the result with:
+Alternatively, you can build locally:
+
+```shell
+docker build . --tag gcr.io/joseki/simple_joseki_server
+docker push gcr.io/joseki/simple_joseki_server
+```
+
+After either method finishes, you can deploy the result with:
 
 ```shell
 gcloud run deploy --image gcr.io/joseki/simple_joseki_server --platform managed --memory 512Mi
@@ -24,5 +31,5 @@ that you can go to and see that the API is working.
 
 ## Disclaimer
 
-The primary author of this package is a Google employee, but this is not an official Google product
+The primary author of this package was a Google employee, but this is not an official Google product
 or endorsed by Google in any way.  
