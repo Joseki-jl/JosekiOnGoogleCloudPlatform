@@ -1,4 +1,9 @@
-# Deploying Joseki APIs on Google Cloud Platform's Cloud Run
+# Deprecated
+
+Joseki.jl is not longer supported, and the instructions below may no longer work due to updates to
+GCP.  Use at your own risk!
+
+## Deploying Joseki APIs on Google Cloud Platform's Cloud Run
 
 This example roughly follows the instructions 
 [here](https://cloud.google.com/run/docs/quickstarts/build-and-deploy).  You may need to go through
